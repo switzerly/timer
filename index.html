@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="HandheldFriendly" content="true">
+    <title>Age Counter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Age Counter</h1>
+        
+        <div id="input-section">
+            <label for="birthdate">Enter your birth date</label>
+            <form id="birth-form">
+                <input type="text" id="birthdate" placeholder="DD.MM.YYYY" required autocomplete="off">
+                <input type="time" id="birthtime" value="00:00">
+                <button type="submit">Calculate</button>
+            </form>
+        </div>
+        
+        <div id="result-section" class="hidden">
+            <div class="age-display">
+                <h2>Your age</h2>
+                <div id="age-counter">0.000000000</div>
+            </div>
+            
+            <div class="clock-container">
+                <div class="clock-labels">
+                    <span class="start-label">Life starts at <span class="green">7 AM</span></span>
+                    <span class="end-label">and ends at <span class="red">10 PM</span></span>
+                </div>
+                
+                <div class="clock">
+                    <div class="hand hour-hand"></div>
+                    <div class="hand minute-hand"></div>
+                    <div class="hand second-hand"></div>
+                </div>
+                
+                <div id="life-time-container">
+                    <div id="life-time">00:00:00</div>
+                </div>
+            </div>
+            
+            <button id="reset-btn">Reset</button>
+        </div>
+    </div>
+    
+    <footer class="page-footer">
+        "time" crafted by <a href="https://t.me/switzerly" target="_blank">switzerly</a>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
