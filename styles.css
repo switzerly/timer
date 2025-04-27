@@ -250,7 +250,7 @@ button:hover {
 }
 
 .page-footer {
-    color: #333;
+    color: #6e6e6e;
     font-size: 14px;
     text-align: center;
     position: absolute;
@@ -261,13 +261,13 @@ button:hover {
 }
 
 .page-footer a {
-    color: #333;
+    color: #6e6e6e;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .page-footer a:hover {
-    color: #8a8a8a;
+    color: #b1b1b1;
 }
 
 
